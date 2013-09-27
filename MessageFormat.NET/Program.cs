@@ -14,8 +14,8 @@ namespace MessageFormat.NET
 
 		public void ExitMessageText(messageformatParser.MessageTextContext context)
 		{
-
 		}
+
 		public void EnterMessage(messageformatParser.MessageContext context)
 		{
 
@@ -23,7 +23,7 @@ namespace MessageFormat.NET
 
 		public void ExitMessage(messageformatParser.MessageContext context)
 		{
-
+			Console.WriteLine();
 		}
 		
 		public void EnterEveryRule(Antlr4.Runtime.ParserRuleContext ctx)
@@ -121,6 +121,61 @@ namespace MessageFormat.NET
 		{
 			Console.Write(context.GetText().Trim());
 		}
+
+		#region "pluralStyle"
+		
+		public void EnterSelector(messageformatParser.SelectorContext context)
+		{
+		}
+
+		public void ExitSelector(messageformatParser.SelectorContext context)
+		{
+		}
+
+		public void EnterPluralArg(messageformatParser.PluralArgContext context)
+		{
+		}
+
+		public void ExitPluralArg(messageformatParser.PluralArgContext context)
+		{
+		}
+
+		public void EnterOffsetValue(messageformatParser.OffsetValueContext context)
+		{
+		}
+
+		public void ExitOffsetValue(messageformatParser.OffsetValueContext context)
+		{
+		}
+
+		public void EnterKeyword(messageformatParser.KeywordContext context)
+		{
+		}
+
+		public void ExitKeyword(messageformatParser.KeywordContext context)
+		{
+			Console.Write(context.GetText());
+			Console.Write(" ");
+		}
+
+		public void EnterPluralStyle(messageformatParser.PluralStyleContext context)
+		{
+		}
+
+		public void ExitPluralStyle(messageformatParser.PluralStyleContext context)
+		{
+		}
+
+		public void EnterExplicitValue(messageformatParser.ExplicitValueContext context)
+		{
+		}
+
+		public void ExitExplicitValue(messageformatParser.ExplicitValueContext context)
+		{
+			Console.Write(context.IDNUMBER());
+			Console.Write(" ");
+		}
+		#endregion
 	}
 
 	class Program
@@ -128,8 +183,9 @@ namespace MessageFormat.NET
 		static void Main(string[] args)
 		{
 			//var input = new Antlr4.Runtime.AntlrInputStream("test10 {test1} {0} {kk}");
-			var input = new Antlr4.Runtime.AntlrInputStream("text blabla {0,date} text {1,time , lonng} t {0} {bla1} {siegfried}");
-
+			var input = new Antlr4.Runtime.AntlrInputStream("text blabla {0,date} text {1,time,long} t {0 } {bla1} {siegfried}");
+			//var input = new Antlr4.Runtime.AntlrInputStream("{days, plural , =0 {aucune} one {heure} other {heures}}");
+			
 			var lexer = new messageformatLexer(input);
 			var tokens = new Antlr4.Runtime.CommonTokenStream(lexer);
 			var parser = new messageformatParser(tokens);

@@ -24,17 +24,17 @@ using ParserRuleContext = Antlr4.Runtime.ParserRuleContext;
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.1-SNAPSHOT")]
 public partial class messageformatBaseListener : ImessageformatListener {
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="messageformatParser.argNumber"/>.
+	/// Enter a parse tree produced by <see cref="messageformatParser.selector"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterArgNumber([NotNull] messageformatParser.ArgNumberContext context) { }
+	public virtual void EnterSelector([NotNull] messageformatParser.SelectorContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="messageformatParser.argNumber"/>.
+	/// Exit a parse tree produced by <see cref="messageformatParser.selector"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitArgNumber([NotNull] messageformatParser.ArgNumberContext context) { }
+	public virtual void ExitSelector([NotNull] messageformatParser.SelectorContext context) { }
 
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="messageformatParser.argument"/>.
@@ -48,6 +48,110 @@ public partial class messageformatBaseListener : ImessageformatListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitArgument([NotNull] messageformatParser.ArgumentContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.argNumber"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterArgNumber([NotNull] messageformatParser.ArgNumberContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.argNumber"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitArgNumber([NotNull] messageformatParser.ArgNumberContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.messageText"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterMessageText([NotNull] messageformatParser.MessageTextContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.messageText"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitMessageText([NotNull] messageformatParser.MessageTextContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.pluralArg"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterPluralArg([NotNull] messageformatParser.PluralArgContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.pluralArg"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitPluralArg([NotNull] messageformatParser.PluralArgContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.offsetValue"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterOffsetValue([NotNull] messageformatParser.OffsetValueContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.offsetValue"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitOffsetValue([NotNull] messageformatParser.OffsetValueContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.keyword"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterKeyword([NotNull] messageformatParser.KeywordContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.keyword"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitKeyword([NotNull] messageformatParser.KeywordContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.pluralStyle"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterPluralStyle([NotNull] messageformatParser.PluralStyleContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.pluralStyle"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitPluralStyle([NotNull] messageformatParser.PluralStyleContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.simpleArg"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterSimpleArg([NotNull] messageformatParser.SimpleArgContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.simpleArg"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitSimpleArg([NotNull] messageformatParser.SimpleArgContext context) { }
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="messageformatParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterType([NotNull] messageformatParser.TypeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="messageformatParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitType([NotNull] messageformatParser.TypeContext context) { }
 
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="messageformatParser.message"/>.
@@ -76,19 +180,6 @@ public partial class messageformatBaseListener : ImessageformatListener {
 	public virtual void ExitArgNameOrNumber([NotNull] messageformatParser.ArgNameOrNumberContext context) { }
 
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="messageformatParser.messageText"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMessageText([NotNull] messageformatParser.MessageTextContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="messageformatParser.messageText"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMessageText([NotNull] messageformatParser.MessageTextContext context) { }
-
-	/// <summary>
 	/// Enter a parse tree produced by <see cref="messageformatParser.style"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
@@ -115,30 +206,17 @@ public partial class messageformatBaseListener : ImessageformatListener {
 	public virtual void ExitNoneArg([NotNull] messageformatParser.NoneArgContext context) { }
 
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="messageformatParser.type"/>.
+	/// Enter a parse tree produced by <see cref="messageformatParser.explicitValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterType([NotNull] messageformatParser.TypeContext context) { }
+	public virtual void EnterExplicitValue([NotNull] messageformatParser.ExplicitValueContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="messageformatParser.type"/>.
+	/// Exit a parse tree produced by <see cref="messageformatParser.explicitValue"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitType([NotNull] messageformatParser.TypeContext context) { }
-
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="messageformatParser.simpleArg"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterSimpleArg([NotNull] messageformatParser.SimpleArgContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="messageformatParser.simpleArg"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitSimpleArg([NotNull] messageformatParser.SimpleArgContext context) { }
+	public virtual void ExitExplicitValue([NotNull] messageformatParser.ExplicitValueContext context) { }
 
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="messageformatParser.argName"/>.
