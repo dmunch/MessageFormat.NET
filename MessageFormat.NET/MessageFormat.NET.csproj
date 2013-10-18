@@ -51,10 +51,17 @@
     <Compile Include="Antlr\messageformatLexer.cs" />
     <Compile Include="Antlr\messageformatListener.cs" />
     <Compile Include="Antlr\messageformatParser.cs" />
+    <Compile Include="MessageFormat.cs" />
+    <Compile Include="MessageFormatListener.cs" />
+    <Compile Include="MessageSegment.cs" />
+    <Compile Include="MessageSegmentFormatter.cs" />
+    <Compile Include="MessageSegmentPrinter.cs" />
+    <Compile Include="MessageSegmentVisiter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="messageformat.g4" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
